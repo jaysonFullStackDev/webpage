@@ -13,14 +13,20 @@ Responsive carousel website with **video cards** and a **transparent navbar**. C
 
 ---
 
-## ⚙️ Setup
+## 👨‍💻 Built with:
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5.3.2
 
-1. Clone the repository:  
-```bash
-git clone <repository-url>
 
-index.html
-style.css
-script.js
-img/        # carousel images
-
+project-folder/
+│
+├── index.html        # Main HTML file
+├── style.css         # Custom CSS styles
+├── script.js         # JS for modal video functionality
+├── img/              # Carousel images
+│   ├── view1.jpg
+│   ├── view2.jpg
+│   └── view3.jpg
+└── README.md         # This documentation
