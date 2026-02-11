@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.carousel {
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-bar {
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.nav-container h1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  cursor: pointer;
+  align-items: center;
+  gap: 2vw;
+}
+
+.nav-bar li {
+  display: inline;
+  margin-left: 0px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: clamp(16px, 2.5vw, 25px);
+  padding: 5px 15px;
+  position: relative;
+  display: block;
+}
+/*1. Carousel Controls (Arrows) */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 15%; /* $carousel-control-width */
+  opacity: 0.5; /* $carousel-control-opacity */
+  transition: opacity 0.15s ease; /* $carousel-control-transition */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1; /* $carousel-control-hover-opacity */
+}
+
+/* 2. Control Icons (The actual SVG arrows) */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem; /* $carousel-control-icon-width */
+  height: 2rem;
+  /* If you want to change the color of the SVG via CSS, use filter */
+  /* filter: invert(0); (White) or invert(1); (Black) */
+}
+
+/* 3. Indicators (The little bars at the bottom) */
+.carousel-indicators [data-bs-target] {
+  width: 50px; /* $carousel-indicator-width */
+  height: 3px; /* $carousel-indicator-height */
+  margin-right: 3px; /* $carousel-indicator-spacer */
+  margin-left: 3px;
+  background-color: #fff; /* $white */
+  opacity: 0.5; /* $carousel-indicator-opacity */
+  transition: opacity 0.6s ease; /* $carousel-indicator-transition */
+  border-top: 10px solid transparent; /* $carousel-indicator-hit-area-height */
+  border-bottom: 10px solid transparent;
+}
+
+.carousel-indicators .active {
+  opacity: 1; /* $carousel-indicator-active-opacity */
+  background-color: #fff; /* $carousel-indicator-active-bg */
+}
+
+/* 4. Captions */
+.carousel-caption {
+  width: 70%; /* $carousel-caption-width */
+  left: 15%; /* Centers it since width is 70% */
+  padding-top: 1.25rem; /* $carousel-caption-padding-y */
+  padding-bottom: 1.25rem;
+  color: #fff; /* $carousel-caption-color */
+}
+
+/* 5. Slide Transition Speed */
+.carousel-item {
+  transition: transform 0.6s ease-in-out; /* $carousel-transition */
+}
+
+img {
+  padding: 10px;
+  width: 100%;
+  height: 50%;
+}
+
+.main-card {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.btn {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  justify-content: center;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  color: #333;
+  margin-top: 20px;
+}
