@@ -9,18 +9,21 @@ body {
 
 .header {
   margin: 0;
-  position: absolute;
+  position: fixed; /* keep absolute */
   top: 0;
+  left: 0; /* add this */
   width: 100%;
-  z-index: 1000;
+  z-index: 1050; /* higher than modal to stay on top */
 }
+
 .nav-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo on left, links on right */
   align-items: center;
   padding: 20px 40px;
   background: rgba(0, 0, 0, 0.4);
 }
+
 .nav-bar h1,
 .nav-bar a {
   color: white;
@@ -29,10 +32,10 @@ body {
 .nav-bar ul {
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
   gap: 2vw;
   margin: 0;
   padding: 0;
+  justify-content: flex-end; /* make links go to the end */
 }
 
 .nav-bar li {
@@ -44,11 +47,16 @@ body {
   text-decoration: none;
   font-size: clamp(16px, 2.5vw, 25px);
   padding: 5px 15px;
-  position: relative;
-  display: block;
 }
 .nav-bar a:hover {
-  color: #ed0707;
+  color: #000000;
+}
+/* Make hamburger menu icon white */
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+.navbar-toggler {
+  border-color: white;
 }
 
 /*1. Carousel Controls (Arrows) */

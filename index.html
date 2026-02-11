@@ -10,22 +10,44 @@
       rel="stylesheet"
     />
 
+    <!-- Your CSS -->
     <link rel="stylesheet" href="style.css" />
+
     <title>Carousel</title>
   </head>
   <body>
+    <!-- Header / Navbar -->
     <div class="header">
       <div class="nav-container">
-        <nav class="nav-bar">
+        <nav class="nav-bar navbar navbar-expand-lg">
           <h1>My Carousel</h1>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Samples</a></li>
-          </ul>
+
+          <!-- Hamburger button for mobile -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Samples</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>
+
+    <!-- Carousel -->
     <div
       id="carouselExampleCaptions"
       class="carousel slide"
@@ -97,6 +119,8 @@
         <span class="carousel-control-next-icon"></span>
       </button>
     </div>
+
+    <!-- Cards Section -->
     <div class="main-card">
       <div class="card" style="width: 18rem">
         <img
@@ -109,10 +133,11 @@
             What A Beautiful Name (Lyric Video) - Hillsong Worship
           </h5>
           <a
-            href="https://www.youtube.com/watch?v=r5L6QlAH3L4&list=RDr5L6QlAH3L4&start_radio=1"
+            href="https://www.youtube.com/watch?v=r5L6QlAH3L4"
             class="btn btn-primary"
-            >Watch Video</a
           >
+            Watch Video
+          </a>
         </div>
       </div>
       <div class="card" style="width: 18rem">
@@ -126,10 +151,11 @@
             What A Beautiful Name (Lyric Video) - Hillsong Worship
           </h5>
           <a
-            href="https://www.youtube.com/watch?v=r5L6QlAH3L4&list=RDr5L6QlAH3L4&start_radio=1"
+            href="https://www.youtube.com/watch?v=r5L6QlAH3L4"
             class="btn btn-primary"
-            >Watch Video</a
           >
+            Watch Video
+          </a>
         </div>
       </div>
       <div class="card" style="width: 18rem">
@@ -143,18 +169,41 @@
             What A Beautiful Name (Lyric Video) - Hillsong Worship
           </h5>
           <a
-            href="https://www.youtube.com/watch?v=r5L6QlAH3L4&list=RDr5L6QlAH3L4&start_radio=1"
+            href="https://www.youtube.com/watch?v=r5L6QlAH3L4"
             class="btn btn-primary"
-            >Watch Video</a
           >
+            Watch Video
+          </a>
         </div>
       </div>
     </div>
+
     <footer>&copy; 2026 JaysonFullStackDev. All rights reserved.</footer>
 
-    <!-- This is my edit -->
+    <!-- Modal Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ratio ratio-16x9">
+              <iframe id="modalVideo" src="" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your JS file -->
+    <script src="script.js"></script>
   </body>
 </html>
